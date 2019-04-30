@@ -1,0 +1,18 @@
+<mvc:View 
+	controllerName="com.cgi.workshop.fiori.controller.App" 
+	xmlns="sap.m" 
+	xmlns:mvc="sap.ui.core.mvc"
+	height="100%">
+	<App id="workshopFioriApp">
+		<Page id="customersPage" title="{i18n>appDescription}">
+			<content>
+				<List id="customersList" items="{/value}">
+					<StandardListItem 
+						id="customersListItem" 
+						title="{CompanyName}" 
+						description="{CustomerID}"/>
+				</List>
+			</content>
+		</Page>
+	</App>
+</mvc:View>
